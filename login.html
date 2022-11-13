@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div style="direction: row; display: flex ; justify-content:space-around; width: 55%; ;padding: 0 -20px 0 0;">
+        <a style="margin-top: 10px; margin-left: 100px;"><img src="./assests/img/gym.png"
+                style="width: 120px; height: 100px; margin: -10px 10px 0 40px; opacity: 100% " /></a>
+
+        <div class="btn-nav"
+            style="display: flex; position: relative ;left: -50px; direction: row; gap: 40px; font-family: Alegreya; font-size: 24px; align-items:center">
+            <a href="/index.html"
+                style="text-decoration: none; color:#3A1212; border-bottom: 3px solid #FF2625;">Home</a>
+            <a href="" style="text-decoration: none; color:#3A1212;">Exercises</a>
+            <a href="./login.html"><i class="fa-solid fa-right-to-bracket"
+                    style="font-size: 25px; margin: 0 0 0 100px; cursor: pointer; color: #3A1212;"></i></a>
+        </div>
+    </div>
+
+    <!--Banner-->
+    <div class="banner" style="position: relative; padding:20px; margin-top: 150px;margin-bottom: 100px;">
+        <p style="
+            font-weight: 600; 
+            color:#FF2625; 
+            display: block;
+            position: absolute;
+            top: 130px;
+            left: 230px;
+            font-size: 250px;
+            opacity: 0.1;">
+            Exercises
+        </p>
+        <img src="./assests/img/model.png" alt="model" class="hero-banner-img" />
+    </div>
+
+
+    <!--Login-->
+    <!-- <div class="container">
+        <label for="show" class="close-btn fas fa-times" title="close"></label>
+        <div class="text">
+            Login Form
+        </div>
+        <form action="#">
+            <div class="data">
+                <label>Email or Phone</label>
+                <input type="text" required>
+            </div>
+            <div class="data">
+                <label>Password</label>
+                <input type="password" required>
+            </div>
+            <div class="checkboxy">
+                <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">Remember
+                    password</label>
+            </div>
+            <div class="forgot-pass">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <div class="btn">
+                <div class="inner"></div>
+                <button type="submit">login</button>
+            </div>
+            <div class="signup-link">
+                Not a member? <a href="#">Signup now</a>
+            </div>
+        </form>
+    </div> -->
+
+
+
+    <div class="container" style="position: absolute;">
+        <form class="signin">
+            <div class="header">
+                <h3>LOG IN</h3>
+            </div>
+            <div class="sep"></div>
+            <div class="inputs">
+                <input type="email" placeholder="Username" autofocus />
+                <input type="password" placeholder="Password" />
+                <div class="checkboxy">
+                    <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">Remember
+                        password</label>
+                </div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button type="submit">SIGN IN</button>
+                </div>
+
+                <p style="text-align: center;">OR</p>
+
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button href="signup" type="submit">SIGN UP</button>
+                </div>
+            </div>
+        </form>
+
+
+
+    </div>
+
+</body>
+
+</html>

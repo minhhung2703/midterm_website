@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <div style="direction: row; display: flex ; justify-content:space-around; width: 55%; ;padding: 0 -20px 0 0;">
+        <a href="/index.html" style="margin-top: 10px; margin-left: 100px;"><img src="./assests/img/gym.png"
+                style="width: 120px; height: 100px; margin: -10px 10px 0 40px; opacity: 100% " /></a>
+
+        <div class="btn-nav"
+            style="display: flex; position: relative ;left: -50px; direction: row; gap: 40px; font-family: Alegreya; font-size: 24px; align-items:center">
+            <a href="/index.html"
+                style="text-decoration: none; color:#3A1212; border-bottom: 3px solid #FF2625;">Home</a>
+            <a href="#results" style="text-decoration: none; color:#3A1212;">Exercises</a>
+            <a href="./login.html"><i class="fa-solid fa-right-to-bracket"
+                    style="font-size: 25px; margin: 0 0 0 100px; cursor: pointer; color: #3A1212;"></i></a>
+        </div>
+    </div>
+
+    <!--Banner-->
+    <div class="banner" style="position: relative; padding:20px; margin-top: 150px;margin-bottom: 100px;">
+        <p style="color: #FF2625; font-weight: 700; font-size: 40px; opacity: 93%; margin-left: 250px;">Fitness Club</p>
+
+        <p style="font-size: 44px; 
+            font-weight: 700; 
+            margin-bottom: 20px; 
+            margin-top: 30px; 
+            margin-left: 250px; 
+            color: #4d4d4d;">
+            Sweat, Smile<br /> and Repeat
+        </p>
+
+        <p style="font-size:22px; line-height:35px; margin-bottom: 30px; margin-left: 250px;">Check out the most
+            effective exercises</p>
+
+        <button style="
+            background:#FF2625; 
+            border: none; 
+            color: white;
+            padding: 10px; 
+            border-radius: 10px; 
+            font-size: 19px; 
+            box-shadow: 2px 2px 2px #666;
+            -moz-box-shadow: 2px 2px 2px #666;
+            -webkit-box-shadow: 2px 2px 2px #666;
+            margin-left: 250px;">
+            Explore Exercises
+        </button>
+
+        <p style="
+            font-weight: 600; 
+            color:#FF2625; 
+            display: block;
+            position: absolute;
+            top: 130px;
+            left: 230px;
+            font-size: 250px;
+            opacity: 0.1;">
+            Exercises
+        </p>
+        <img src="./assests/img/model.png" alt="model" class="hero-banner-img" />
+    </div>
+
+    <!--Search-->
+    <div style="position:relative; 
+        top:200px; 
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 37px; 
+        padding: 20px;">
+        <p style="color: darkorange; font-size: 50px ;font-weight: 600; margin-bottom: 49px; text-align:center;">
+            Awesome Exercises
+        </p>
+        <form style="position: relative;
+        margin-bottom: 72px; 
+        justify-content:center; align-items:center; display: flex;">
+            <input style="padding: 10px;
+            height: 43px;
+            font-size: 17px;
+            font-weight: 700;
+            border-radius: 4px;
+            width: 55%;
+            background: #fff;
+            " type="text" placeholder="Search Exercises" name="search" />
+
+            <button class="search-btn" style="background-color: #FF2625;
+            color: #fff;
+            float: left;
+            font-size: 23px;
+            border-radius: 4px;
+            text-transform: none;
+            height: 67px;
+            width: 173px;
+            border: none;
+            position: absoluted;
+            cursor: pointer;" type="submit">Search</button>
+        </form>
+    </div>
+
+    <!--Body card-->
+    <section class="bodyCard">
+        <div class="max-width">
+            <div class="carousel owl-carousel">
+                <div class="card" style="border-top: 3px solid red">
+                    <div class="box">
+                        <img src="/assests/icon/gym.png" alt="">
+                        <p style="color: black; padding-top: 30px; font-size: 23px; font-weight: 600;">All</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="/assests/icon/gym.png" alt="">
+                        <p style="color: black; padding-top: 30px; font-size: 23px; font-weight: 600;">Back</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="/assests/icon/gym.png" alt="">
+                        <p style="color: black; padding-top: 30px; font-size: 23px; font-weight: 600;">Cardio</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="/assests/icon/gym.png" alt="">
+                        <p style="color: black; padding-top: 30px; font-size: 23px; font-weight: 600;">Chest</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="float:right; margin-right:290px; margin-top: -30px;">
+            <img class="arrow" src="/assests/icon/left-arrow.png" alt="left-arrow" />
+            <img style="margin-left: 30px;" class="arrow" src="/assests/icon/right-arrow.png" alt="right-arrow" />
+        </div>
+    </section>
+
+    <!--Showing Results-->
+    <div id="results" class="banner" style="position: relative; 
+        padding:20px; 
+        margin-top: 150px;">
+        <p style="font-size: 50px; 
+        font-weight: 700; 
+        margin-bottom: 20px; 
+        margin-top: 30px; 
+        margin-left: 250px; 
+        color: darkorange;">Showing Results</p>
+    </div>
+
+    <section class="result">
+        <div class="max-width">
+            <div style="display: flex; justify-content: space-around; margin: 10px 0;">
+                <div class="cardResult"
+                    style="background: #fff; border-radius: 6px; padding: 25px 35px; text-align: center; overflow: hidden; transition: all 0.3s ease;">
+                    <div
+                        style="display: flex; border-top: 4px solid red; ; flex-direction: column; align-items:flex-start; justify-content: center; transition: all 0.3s ease;">
+                        <img style="object-fit: cover; transition: all 0.3s ease;"
+                            src="http://d205bpvrqc9yn1.cloudfront.net/0001.gif" alt="">
+                        <p style="color: black; padding-top: 30px; font-size: 30px; font-weight: 600;">3/4 Sit-Up</p>
+                    </div>
+                </div>
+                <div class="cardResult"
+                    style="background: #fff; border-radius: 6px; padding: 25px 35px; text-align: center; overflow: hidden; transition: all 0.3s ease;">
+                    <div
+                        style="display: flex;border-top: 4px solid red; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                        <img style="object-fit: cover; transition: all 0.3s ease;"
+                            src="http://d205bpvrqc9yn1.cloudfront.net/0002.gif" alt="">
+                        <p style="color: black; padding-top: 30px; font-size: 30px; font-weight: 600;">Back</p>
+                    </div>
+                </div>
+
+                <div class="cardResult"
+                    style="background: #fff; border-radius: 6px; padding: 25px 35px; text-align: center; overflow: hidden; transition: all 0.3s ease;">
+                    <div
+                        style="display: flex; border-top: 4px solid red; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                        <img style="object-fit: cover; transition: all 0.3s ease;"
+                            src="http://d205bpvrqc9yn1.cloudfront.net/0003.gif" alt="">
+                        <p style="color: black; padding-top: 30px; font-size: 30px; font-weight: 600;">Back</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="result">
+        <div class="max-width">
+            <div style="display: flex;  justify-content: space-around; margin: 10px 0;">
+                <div class="cardResult"
+                    style="background: #fff; border-radius: 6px; padding: 25px 35px; text-align: center; overflow: hidden; transition: all 0.3s ease;">
+                    <div
+                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                        <img style="border-top: 4px solid red;; object-fit: cover; transition: all 0.3s ease;"
+                            src="http://d205bpvrqc9yn1.cloudfront.net/1512.gif" alt="">
+                        <p style="color: black; padding-top: 30px; font-size: 30px; font-weight: 600;">Back</p>
+                    </div>
+                </div>
+                <div class="cardResult"
+                    style="background: #fff; border-radius: 6px; padding: 25px 35px; text-align: center; overflow: hidden; transition: all 0.3s ease;">
+                    <div
+                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                        <img style="border-top: 4px solid red;; object-fit: cover; transition: all 0.3s ease;"
+                            src="http://d205bpvrqc9yn1.cloudfront.net/0006.gif" alt="">
+                        <p style="color: black; padding-top: 30px; font-size: 30px; font-weight: 600;">Back</p>
+                    </div>
+                </div>
+
+                <div class="cardResult"
+                    style="background: #fff; border-radius: 6px; padding: 25px 35px; text-align: center; overflow: hidden; transition: all 0.3s ease;">
+                    <div
+                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                        <img style="border-top: 4px solid red;; object-fit: cover; transition: all 0.3s ease;"
+                            src="http://d205bpvrqc9yn1.cloudfront.net/0007.gif" alt="">
+                        <p style="color: black; padding-top: 30px; font-size: 30px; font-weight: 600;">Back</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <!-- <div class="footer-container" style="width: 100%; height: 50px; background: red;">
+        <div class="footer">
+            <div class="social-links">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>
